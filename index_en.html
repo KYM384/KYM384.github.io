@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>三宅大貴のページ</title>
+    <title>Daiki Miyake&apos;s Page</title>
     <style>
         :root {
             --primary-color: #FF9800;
@@ -14,15 +14,17 @@
             --background-color: #FFE0B2;
             --max-width: 800px;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             background-color: var(--background-color);
             color: var(--text-color);
-            font-family: "Meiryo", "メイリオ", sans-serif;
+            font-family: "Arial", sans-serif;
             font-size: 14px;
             line-height: 1.6;
             display: flex;
@@ -30,37 +32,46 @@
             align-items: center;
             padding: 20px;
         }
-        header, section, footer {
+
+        header,
+        section,
+        footer {
             width: 100%;
             max-width: var(--max-width);
             background: var(--block-bg);
             margin: 16px 0;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
         header {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 30px 20px;
         }
+
         .profile-icon {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             object-fit: cover;
+            margin-bottom: 16px;
         }
+
         header h1 {
             font-size: 2rem;
             font-weight: normal;
+            margin-bottom: 8px;
         }
+
         .research-content {
             margin-top: 12px;
             text-align: center;
             font-size: 0.95rem;
-            color: var(--text-color);
         }
+
         section h2 {
             position: relative;
             font-size: 1.5rem;
@@ -68,6 +79,7 @@
             margin: 0 -16px 12px;
             padding: 8px 16px 4px;
         }
+
         section h2::after {
             content: "";
             position: absolute;
@@ -77,80 +89,87 @@
             height: 3px;
             background-color: var(--primary-color);
         }
+
         section h3 {
             font-size: 1rem;
             font-weight: normal;
             margin-top: 16px;
         }
+
         ul {
             list-style: disc;
             padding-left: 1.2em;
             margin-top: 8px;
         }
+
         .edu-list li {
             display: flex;
             margin-bottom: 6px;
         }
+
         .edu-year {
             width: 180px;
             flex-shrink: 0;
-            color: var(--text-color);
         }
+
         .edu-place {
             flex-grow: 1;
-            color: var(--text-color);
         }
+
         li:not(.edu-list li) {
             margin-bottom: 6px;
         }
+
         a {
             color: var(--primary-color);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav style="text-align: right; margin-bottom: 8px;">
             <a href="index.html" hreflang="ja" style="color: var(--dark-color);">JP</a> |
             <a href="index_en.html" hreflang="en" style="color: var(--dark-color);">EN</a>
         </nav>
-        <img src="jr1.jpg" alt="プロフィールアイコン" class="profile-icon">
-        <h1>三宅大貴 / KYM384 </h1>
+        <img src="jr1.jpg" alt="Profile Icon" class="profile-icon">
+        <h1>Daiki Miyake / KYM384</h1>
         <div class="research-content">
-            <p>GANや拡散モデル、フローマッチングなどの深層生成モデルに興味があります</p>
+            <p>I am interested in deep generative models such as GANs, diffusion models, and flow matching.</p>
         </div>
     </header>
 
-    <section id="education">
-        <h2>所属</h2>
+    <section id="affiliation">
+        <h2>Affiliation</h2>
         <ul class="edu-list">
-            <li><span class="edu-year">2020年4月-2024年3月</span><span class="edu-place">京都大学 工学部 電気電子工学科</span></li>
-            <li><span class="edu-year">2024年4月-現在</span><span class="edu-place">東京大学 工学系研究科 技術経営戦略学専攻 修士課程 松尾・岩澤研究室</span></li>
+            <li><span class="edu-year">Apr 2020–Mar 2024</span><span class="edu-place">Undergraduate School of Electrical and Electronic Engineering, Kyoto University</span></li>
+            <li><span class="edu-year">Apr 2024–Present</span><span class="edu-place">Master's course of Department of Technology Management for Innovation, Graduate School of Engineering, University of Tokyo (Matsuo &amp; Iwasawa Lab)</span></li>
         </ul>
     </section>
 
     <section id="achievements">
-        <h2>業績</h2>
-        <h3>国際会議 (査読あり)</h3>
+        <h2>Publications</h2>
+        <h3>International Conference (Peer-reviewed)</h3>
         <ul>
-            <li>Daiki Miyake, Akihiro Iohara, Yu Saito and Toshiyuki Tanaka, "Negative-Prompt Inversion: Fast Image Inversion for Editing with Text-Guided Diffusion Models," <i>2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</i>, 2025, pp. 2063-2072.</li>
+            <li>Daiki Miyake, Akihiro Iohara, Yu Saito, and Toshiyuki Tanaka, "Negative-Prompt Inversion: Fast Image Inversion for Editing with Text-Guided Diffusion Models," <i>2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</i>, 2025, pp. 2063–2072.</li>
         </ul>
-        <h3>国内会議 (査読なし)</h3>
+        <h3>Domestic Conference (Non-peer-reviewed)</h3>
         <ul>
-            <li>三宅大貴, 鈴木雅大, 松尾豊, フローマッチングにおける識別器を用いたWasserstein距離の最小化, 2025年度人工知能学会全国大会, 2025.</li>
+            <li>Daiki Miyake, Masahiro Suzuki, and Yutaka Matsuo, "Minimizing Wasserstein Distance by Discriminator for Flow Matching," 2025 Annual Conference of the Japanese Society for Artificial Intelligence, 2025.</li>
         </ul>
     </section>
 
     <section id="contact">
-        <h2>連絡先</h2>
+        <h2>Contact</h2>
         <ul>
             <li>Twitter: <a href="https://twitter.com/KYM384" target="_blank">@KYM384</a></li>
             <li>GitHub: <a href="https://github.com/KYM384" target="_blank">KYM384</a></li>
-            <li>Google Scholar: <a href="https://scholar.google.com/citations?user=6j-lfMUAAAAJ&hl=ja" target="_blank">Daiki Miyake</a></li>
+            <li>Google Scholar: <a href="https://scholar.google.com/citations?user=6j-lfMUAAAAJ&hl=en" target="_blank">Daiki Miyake</a></li>
             <li>Email: daiki.miyake(at)weblab.t.u-tokyo.ac.jp</li>
         </ul>
     </section>
@@ -159,4 +178,5 @@
         &copy; 2025 Daiki Miyake. All rights reserved
     </footer>
 </body>
+
 </html>
